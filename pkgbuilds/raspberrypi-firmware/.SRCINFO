@@ -1,0 +1,28 @@
+pkgbase = raspberrypi-firmware
+	pkgdesc = Firmware tools, libraries, and headers for Raspberry Pi
+	pkgver = 20210208
+	pkgrel = 1
+	url = https://github.com/raspberrypi/firmware
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = custom
+	provides = raspberrypi-firmware-tools
+	replaces = raspberrypi-firmware-tools
+	options = !strip
+	source = 00-raspberrypi-firmware.conf
+	source = 10-raspberrypi-firmware.rules
+	md5sums = ecc6931d48542a64576f075000854929
+	md5sums = 8764134137bab656907feb1a51d3393e
+	source_armv6h = https://github.com/raspberrypi/firmware/archive/f11bc1321a2747b00be83ca7169af0bfe601d376.tar.gz
+	md5sums_armv6h = a5bcd37e1122a3388f875943b7b826d2
+	source_armv7h = https://github.com/raspberrypi/firmware/archive/f11bc1321a2747b00be83ca7169af0bfe601d376.tar.gz
+	md5sums_armv7h = a5bcd37e1122a3388f875943b7b826d2
+	source_aarch64 = https://github.com/raspberrypi/userland/archive/4a0a19b88b43e48c6b51b526b9378289fb712a4c.tar.gz
+	source_aarch64 = https://raw.githubusercontent.com/raspberrypi/firmware/master/opt/vc/LICENCE
+	makedepends_aarch64 = cmake
+	md5sums_aarch64 = 3f5e1c9d4f8295065a283676794b3f57
+	md5sums_aarch64 = 86e53f5f5909ee66900418028de11780
+
+pkgname = raspberrypi-firmware
+
